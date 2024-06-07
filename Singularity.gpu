@@ -1,9 +1,6 @@
 Bootstrap: docker
 From: mambaorg/micromamba
 
-%files
-    genai23.09-mamba-environment.yml /opt
-
 %post
 
     apt-get update

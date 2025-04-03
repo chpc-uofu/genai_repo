@@ -13,8 +13,8 @@ From: mambaorg/micromamba
     apt-get -y install cuda-drivers # driver is enough, cuda gets installed via mamba
 
     channels="-c conda-forge -c pytorch -c nvidia "
-    micromamba install --yes --name base -c conda-forge -c pytorch -c nvidia pytorch torchvision torchaudio pytorch-cuda=11.8 openai langchain huggingface_hub transformers sentence-transformers einops accelerate pypdf chromadb gradio jupyter
-    micromamba run pip install bitsandbytes InstructorEmbedding git+https://github.com/huggingface/diffusers
+    micromamba install --yes --name base -c conda-forge -c pytorch -c nvidia pytorch torchvision torchaudio pytorch-cuda=11.8 openai langchain langchain-community huggingface_hub transformers sentence-transformers einops accelerate pypdf chromadb gradio jupyter
+    micromamba run pip install bitsandbytes InstructorEmbedding git+https://github.com/huggingface/diffusers sentencepiece
 
     micromamba clean -aqy
 
